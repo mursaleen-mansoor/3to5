@@ -1,0 +1,198 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>WEB LAYOUT</title>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+      body {
+        height: 3000px;
+        margin: 0;
+        background: linen;
+        line-height: 1.5;
+      }
+      .header {
+        background: black;
+        color: white;
+        padding: 18px 14px;
+      }
+      .header h1 {
+        margin: 0;
+        font-size: 20px;
+        letter-spacing: 0.5px;
+      }
+      .navbar {
+        position: sticky;
+        top: 0;
+        z-index: 10;
+        padding: 0px;
+      }
+      .navbar ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+      }
+      .navbar li {
+        display: inline-block;
+      }
+      .navbar a {
+        text-decoration: none;
+        padding: 12px 18px;
+        display: inline-block;
+        color: black;
+        font-weight: bold;
+      }
+      .navbar a:hover {
+        background: black;
+        color: beige;
+      }
+      .container {
+        width: 90%;
+        max-width: 1050px;
+        margin: 18px auto;
+      }
+      .content {
+        float: left;
+        width: 70%;
+        background: lightsalmon;
+        padding: 15px;
+        border: 1px solid black;
+        border-radius: 10px;
+        min-height: 420px;
+      }
+      .sidebar {
+        float: right;
+        width: 28%;
+        background: lemonchiffon;
+        padding: 15px;
+        border: 1px solid black;
+        border-radius: 10px;
+        min-height: 420px;
+      }
+      .clearfix {
+        clear: both;
+      }
+      .post {
+        border: 1px solid black;
+        padding: 15px;
+        border-radius: 10px;
+        margin-bottom: 12px;
+        background: bisque;
+      }
+      .post h2 {
+        margin: 0 0 8px 0;
+        font-size: 20px;
+      }
+      .widget {
+        border: 1px solid black;
+        padding: 15px;
+        border-radius: 10px;
+        margin-bottom: 12px;
+        background: bisque;
+      }
+
+      .widget h3 {
+        margin: 0 0 8px 0;
+        font-size: 20px;
+      }
+      .widget li {
+        list-style: none;
+      }
+      .topBtn {
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+        background: black;
+        color: white;
+        padding: 12px 14px;
+        border-radius: 7px;
+        text-decoration: none;
+        font-size: 15px;
+      }
+      .topBtn:hover {
+        background: rgb(214, 199, 62);
+        color: black;
+        border: 2px solid crimson;
+        font-size: 17px;
+        font-weight: bolder;
+      }
+      .footer{
+        background: black;
+        color: whitesmoke;
+        padding: 15px;
+        text-align: center;
+        margin-top: 18px;
+      }
+    </style>
+  </head>
+  <body id="top">
+    <header class="header">
+      <h1>My WEBSITE</h1>
+    </header>
+    <nav class="navbar">
+      <ul>
+        <li><a href="">Home</a></li>
+        <li><a href="">Posts</a></li>
+        <li><a href="">Sidebar</a></li>
+        <li><a href="">Footer</a></li>
+      </ul>
+    </nav>
+    <div class="container">
+      <main class="content" id="posts">
+        <div class="post">
+          <h2>Post Title 1</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Adipisci,
+            expedita?
+          </p>
+        </div>
+
+        <div class="post">
+          <h2>Post Title 2</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Adipisci,
+            expedita?
+          </p>
+        </div>
+
+        <div class="post">
+          <h2>Post Title 3</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Adipisci,
+            expedita?
+          </p>
+        </div>
+      </main>
+
+      <aside class="sidebar" id="side">
+        <div class="widget">
+          <h3>About</h3>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+        </div>
+
+        <div class="widget">
+          <h3>Categories</h3>
+          <li>HTML</li>
+          <li>CSS</li>
+          <li>PROJECTS</li>
+        </div>
+        <div class="widget">
+          <h3>Contact</h3>
+          <p>Example@gmail.com</p>
+        </div>
+      </aside>
+      <div class="clearfix"></div>
+    </div>
+
+
+
+
+
+    <footer class="footer">© 2026 - FOOTER AREA</footer>
+    
+    <a href="#top" class="topBtn">↑Top</a>
+  </body>
+</html>
